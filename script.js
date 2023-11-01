@@ -10,13 +10,10 @@ const junior = document.getElementById('junior')
 function resumen(){
     if(categoria.value=="estudiante"){
       estudiante.value = valorEntrada * 0.20
-      console.log(estudiante.value)
     }else if(categoria.value=="trainee"){
       trainee.value = valorEntrada * 0.50
-      console.log(trainee.value)
     }else if(categoria.value=="junior"){
      junior.value = valorEntrada * 0.85
-     console.log(junior.value)
     }
-    totalCompra.textContent = totalCompra.textContent + Number(cantidadEntrada.value) * Number(categoria.value)
+    totalCompra.textContent = "Total a pagar: $" + Number(cantidadEntrada.value) * Number(categoria.value)
 }
